@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: blueviolet;
+ }
+ #header{
+    height: 8%;
+    width: 100%;
+    margin-top: 1.5%;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(0, 0, 0);
+ }
+ #logo{
+   font-weight: 900;
+ }
+ #cat{
+    display: flex;
+ }
+ .texts{
+    margin-left: 15px;
+    font-size: 24px;
+ }
+ .texts:hover{
+    color: rgb(234, 126, 26);
+ }
+ .iconn{
+    display: flex;
+    height: 40px;
+    width:60px ;
+ }
+ .icon{
+    font-size: 22px;
+    padding: 18%;
+    color: aliceblue;
+    background-color: rgb(234, 126, 26);
+    border: 2px solid rgb(113, 58, 24);
+    border-radius: 50%;
+    margin-left: 7%;
+ }
+ .icon:hover{
+    background-color: black;
+ }
+
+ .carttab{
+
+   width: 400px;
+   background-color: #353432;
+   color: #eee;
+   position: fixed;
+   inset: 0 0 0 auto;
+   display: grid;
+   grid-template-rows: 70px 1fr 70px;
+ }
+ .carttab .active{
+   display: block;
+ }
+ .carttab h1{
+   padding: 20px;
+   margin: 0;
+   font-weight: 300;
+}
+.carttab .btnn{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+    
+}
+.carttab .btnn button{
+   background-color: #e8bc0e;
+   border: none;
+   font-family: poppins;
+   font-weight: 500;
+   cursor: pointer;
+}
+.carttab .btnn .close{
+   background-color: #c3e7ec;
+}
+
+ #hero{
+    height: 95%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .slider {
+    width: 400px;
+    height: 50px;
+    margin: auto;
+    overflow: hidden;
+    background: orange;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    line-height: 50px;
+    text-align: center;
+}
+#text {
+    animation: slide 0.5s ease;
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+ #page1{
+    height: 80%;
+    width: 45%;
+    margin-left: 7%;
+    
+ }
+ #play{
+   display: flex;
+   font-size: 40px;
+   margin-top: 24%;
+   gap: 14px;
+   text-align: center;
+   animation-name: FontAnimate;
+   animation-duration: 0.5s;
+   animation-timing-function: ease-in-out;
+   animation-delay: 0s;
+   animation-iteration-count: 1 ;
+ }
+ #play i{
+   color: rgb(234, 126, 26);
+   font-size: 53px;
+   
+ }
+ #play p{
+   margin-top: 3%;
+   font-weight: bold;
+   font-size: large;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+#H{
+   margin-top: 3%;
+   font-size: 60px;
+   font-weight: 700;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   animation-name: FontAnimate;
+   animation-duration: 0.5s;
+   animation-timing-function: ease-in-out;
+   animation-delay: 0s;
+   animation-iteration-count: 1;
+}
+@keyframes FontAnimate{
+   from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+   
+}
+
+
+#para{
+   margin-top: 4%;
+   font: optional;
+   font-weight: light;
+   font-size: large;
+   opacity: 80%;
+   animation-name: FontAnimate;
+   animation-duration: 0.5s;
+   animation-timing-function: ease-in-out;
+   animation-delay: 0s;
+   animation-iteration-count: 1 ;
+}
+/* #button{
+   color: white;
+   display: flex;
+   gap: 1.5rem;
+   background: transparent;
+}
+.btn1{
+   
+   padding: 1.5%;
+   border: 1px ;
+   border-radius: 5rem;
+   cursor: pointer;
+} */
+ .btn-container {
+        display: flex;
+        gap: 12px;
+        margin-top: 4%;
+        animation-name: FontAnimate;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1 ;
+    }
+
+    .btn {
+        background-color: rgb(234, 126, 26);
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 25px;   /* Button radius */
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    #ot{
+         color: rgb(234, 126, 26);
+         background:transparent;
+         border: 2px solid rgb(234, 126, 26);
+    }
+/* #re:hover{
+   background-color: white;
+   color: rgb(234, 126, 26);
+} */
+#page2{
+    height: 70%;
+    width: 45%;
+ }
+ #page2 img{
+   margin-top: 23%;
+   margin-left: -5%;
+ }
+ #sec-2{
+   height: 68%;
+   width: 100%;
+ }
+#head-2{
+   padding-top: 2%;
+   font-weight: 700;
+   text-align: center;
+   font-size: xx-large;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#sec-2para{
+   padding-top: 0.5%;
+   font: optional;
+   font-weight: light;
+   font-size: large;
+   opacity: 80%;
+   text-align: center;
+}
+.card{
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 3%;
+    gap: 7%;
+    text-align: center;
+    justify-content: center;
+}
+.card h3{
+    font-weight:-1000px;
+    opacity: 80%;
+}
+#cake{
+   border: 3px solid rgb(220, 219, 219);
+   padding-top: 2%;
+   padding-bottom: 2%;
+   padding-left: 3%;
+   padding-right: 3%;
+   text-align: center;
+   justify-content: center;
+   border-radius: 15%;
+   box-sizing: border-box;
+   box-shadow: 30px;
+}
+
+#sandwich{
+   border: 3px solid rgb(220, 219, 219);
+   padding-top: 2%;
+   padding-bottom: 2%;
+   padding-left: 3%;
+   padding-right: 3%;
+   border-radius: 15%;
+   box-sizing: border-box;
+   box-shadow: 30px;
+   
+   
+}
+#Cookie{
+   border: 3px solid rgb(220, 219, 219);
+   padding-top: 2%;
+   padding-bottom: 2%;
+   padding-left: 3%;
+   padding-right: 3%;
+   border-radius: 15%;
+    box-sizing: border-box;
+   box-shadow: 30px;
+}
+#bread{
+   border: 3px solid rgb(220, 219, 219);
+   padding-top: 2%;
+   padding-bottom: 2%;
+   padding-left: 3%;
+   padding-right: 3%;
+   border-radius: 15%;
+    box-sizing: border-box;
+   box-shadow: 30px;
+}
+#sec-3{
+   height: 65%;
+   width: 100%;
+   display: flex;
+}
+#sec3-left{
+   height:100%;
+   width:50%;
+}
+#sec3-left img{
+   height: 75%;
+   margin-left: 25%;
+}
+#sec3-right{
+   height: 100%;
+   width:50%;
+   padding-left: 3.5%;
+}
+#text-3{
+   margin-top: 4%;
+   font-size: x-large;
+   font-weight: 500;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#text-3a{
+   padding-top: 2.5%;
+   font-size: larger;
+   opacity: 75%;
+}
+#text-3b{
+   padding-top: 2%;
+   font-size: larger;
+   opacity: 80%;
+   font-weight: 500;
+}
+#sec-4{
+   height: 82%;
+   width: 100%;
+   display: flex;
+   margin-top: 6%;
+}
+
+#sec4-left{
+   height:100%;
+   width:50%;
+}
+#sec4-left img{
+   height: 75%;
+   font-size: 50%;
+   margin-left: 35%;
+}
+#sec4-right{
+   height: 100%;
+   width:50%;
+   padding-left: 3.5%;
+   margin-left: -5%;
+   margin-top: 5%;
+}
+#text-4{
+   margin-top: 4%;
+   font-size: x-large;
+   font-weight: 500;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#text-4a{
+   padding-top: 2.5%;
+   font-size: larger;
+   opacity: 75%;
+}
+#text-4b{
+   padding-top: 2%;
+   font-size: larger;
+   opacity: 80%;
+   font-weight: 500;
+}
+.apple{
+   display: flex;
+   opacity: 100%;
+   font-size: larger;
+   padding-top: 20px;
+   gap: 2%;
+   font-weight: bolder;
+}
+.apple img{
+   font-size: 20px;
+   height: 40px;
+}
+#sec-5{
+   height: 68%;
+   width: 100%;
+   font-size: medium;
+   background-color: rgb(255, 255, 255);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#h5{
+   text-align: center;
+   font-size: x-large;
+}
+#para5{
+   text-align: center;
+   margin-top: 1%;
+   font-size: larger;
+   opacity: 85%;
+}
+#page-5{
+   display: flex;
+   margin-top: 2%;
+   text-align: center;
+   justify-content: center;
+   gap: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#page-5b{
+   display: flex;
+   margin-top: 2%;
+   text-align: center;
+   justify-content: center;
+   gap: 20px;
+}
+.qw:hover{
+   background-color: rgb(234, 126, 26);
+   color: aliceblue;
+}
+.qw{
+   border: 1.5px solid black;
+   border-radius: 5%;
+   object-fit: fill;
+   overflow: hidden;
+   padding-bottom: 15px;
+}
